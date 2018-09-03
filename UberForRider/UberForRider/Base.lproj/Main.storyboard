@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SignVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignVC" customModule="UberForRider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jo-y8-Y22">
+                                <rect key="frame" x="140" y="44" width="95" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w6V-hr-Nh8">
+                                <rect key="frame" x="68" y="222" width="238" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmL-SV-oqn">
+                                <rect key="frame" x="68" y="327" width="54" height="30"/>
+                                <state key="normal" title="Login in"/>
+                                <connections>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vec-IM-oVk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-0L-wFH">
+                                <rect key="frame" x="254" y="327" width="52" height="30"/>
+                                <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="836-Mq-AQV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXR-mi-A4D">
+                                <rect key="frame" x="68" y="133" width="238" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5jo-y8-Y22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="5bd-Co-CuL"/>
+                            <constraint firstItem="w6V-hr-Nh8" firstAttribute="top" secondItem="VXR-mi-A4D" secondAttribute="bottom" constant="59" id="8AA-vr-7iz"/>
+                            <constraint firstItem="VXR-mi-A4D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="KBu-1C-T6g"/>
+                            <constraint firstItem="VXR-mi-A4D" firstAttribute="top" secondItem="5jo-y8-Y22" secondAttribute="bottom" constant="65" id="Sxf-AJ-VfB"/>
+                            <constraint firstItem="cmL-SV-oqn" firstAttribute="baseline" secondItem="Orh-0L-wFH" secondAttribute="baseline" id="UKB-Xd-OjV"/>
+                            <constraint firstItem="VXR-mi-A4D" firstAttribute="trailing" secondItem="Orh-0L-wFH" secondAttribute="trailing" id="Vse-Vz-tmV"/>
+                            <constraint firstItem="5jo-y8-Y22" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wk5-ZZ-iAW"/>
+                            <constraint firstItem="VXR-mi-A4D" firstAttribute="leading" secondItem="cmL-SV-oqn" secondAttribute="leading" id="dRB-gb-ZPQ"/>
+                            <constraint firstItem="VXR-mi-A4D" firstAttribute="leading" secondItem="w6V-hr-Nh8" secondAttribute="leading" id="dj6-G0-zF5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VXR-mi-A4D" secondAttribute="trailing" constant="69" id="ibu-aj-HcD"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cmL-SV-oqn" secondAttribute="trailing" constant="20" symbolic="YES" id="sGR-Cn-eYx"/>
+                            <constraint firstItem="cmL-SV-oqn" firstAttribute="top" secondItem="w6V-hr-Nh8" secondAttribute="bottom" constant="75" id="tVn-Cc-ASb"/>
+                            <constraint firstItem="VXR-mi-A4D" firstAttribute="trailing" secondItem="w6V-hr-Nh8" secondAttribute="trailing" id="uEg-Sk-tvq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5jo-y8-Y22" secondAttribute="trailing" constant="140" id="yOh-hy-CX9"/>
+                            <constraint firstItem="Orh-0L-wFH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="zRv-Be-2Rn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="EmailTextField" destination="VXR-mi-A4D" id="tqt-N2-gqu"/>
+                        <outlet property="PasswordTextField" destination="w6V-hr-Nh8" id="zb2-yp-ApH"/>
+                        <segue destination="Cvi-1m-YIz" kind="show" identifier="riderSegue" id="dZ3-GL-Rp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--RiderVC-->
+        <scene sceneID="12f-Mn-3ZG">
+            <objects>
+                <viewController id="Cvi-1m-YIz" customClass="RiderVC" customModule="UberForRider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FXp-Hj-XtQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zee-0K-j6X">
+                                <rect key="frame" x="0.0" y="32" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Rider" id="JT0-I1-1Un">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="2LF-xZ-UBv">
+                                            <connections>
+                                                <action selector="logout:" destination="Cvi-1m-YIz" id="d7G-Wp-nya"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbL-ek-R3p">
+                                <rect key="frame" x="155.33333333333334" y="566" width="64" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="fGj-fl-TMy"/>
+                                </constraints>
+                                <state key="normal" title="Call Uber"/>
+                                <connections>
+                                    <action selector="callUber:" destination="Cvi-1m-YIz" eventType="touchUpInside" id="YiK-7R-RtR"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="smQ-fQ-9pb">
+                                <rect key="frame" x="0.0" y="76" width="375" height="445"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="smQ-fQ-9pb" firstAttribute="leading" secondItem="rE6-S2-VMJ" secondAttribute="leading" id="8av-7z-ia6"/>
+                            <constraint firstItem="rE6-S2-VMJ" firstAttribute="bottom" secondItem="TbL-ek-R3p" secondAttribute="bottom" constant="185" id="Cam-9M-ZLe"/>
+                            <constraint firstItem="TbL-ek-R3p" firstAttribute="top" secondItem="smQ-fQ-9pb" secondAttribute="bottom" constant="45" id="HBn-55-kIs"/>
+                            <constraint firstItem="smQ-fQ-9pb" firstAttribute="trailing" secondItem="rE6-S2-VMJ" secondAttribute="trailing" id="Lbf-V5-LT8"/>
+                            <constraint firstItem="Zee-0K-j6X" firstAttribute="centerX" secondItem="TbL-ek-R3p" secondAttribute="centerX" id="cbN-Ky-lej"/>
+                            <constraint firstItem="Zee-0K-j6X" firstAttribute="leading" secondItem="smQ-fQ-9pb" secondAttribute="leading" id="dlK-s3-xC9"/>
+                            <constraint firstItem="smQ-fQ-9pb" firstAttribute="top" secondItem="Zee-0K-j6X" secondAttribute="bottom" id="fXG-fI-0Il"/>
+                            <constraint firstItem="Zee-0K-j6X" firstAttribute="trailing" secondItem="smQ-fQ-9pb" secondAttribute="trailing" id="vVQ-oA-AmI"/>
+                            <constraint firstItem="Zee-0K-j6X" firstAttribute="top" secondItem="FXp-Hj-XtQ" secondAttribute="top" constant="32" id="wKL-Nr-qqV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rE6-S2-VMJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="callUberBtn" destination="TbL-ek-R3p" id="kty-Bw-bd2"/>
+                        <outlet property="myMap" destination="smQ-fQ-9pb" id="Gpo-2L-AUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1c-IU-ZUi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.39999999999998" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
